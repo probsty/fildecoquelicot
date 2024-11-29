@@ -1,0 +1,30 @@
+/* About Section */
+.about-section {
+  background-color: #F5F5F5; /* Light gray background */
+  padding: 80px 20px; /* Increased top and bottom padding for more height */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  text-align: center; /* Align text in the center */
+  min-height: 500px; /* Ensure a minimum height */
+}
+
+.about-content {
+  max-width: 800px; /* Restrict the width for readability */
+  color: #6B747D; /* Softer gray text for a modern feel */
+  margin: 0 20px; /* Add spacing on the sides */
+}
+
+.about-content h1 {
+  font-size: 3rem; /* Larger title for emphasis */
+  font-family: 'Inter', sans-serif; /* Modern sans-serif font for title */
+  color: #1F2937; /* Darker gray for the title */
+  margin-bottom: 30px; /* More space below the title */
+}
+
+.about-content p {
+  font-size: 1.2rem; /* Slightly larger font size for better readability */
+  font-family: 'Inter', sans-serif; /* Modern sans-serif font for readability */
+  line-height: 1.8; /* Increased line spacing for clarity */
+  margin: 0; /* Remove extra margins */
+}
