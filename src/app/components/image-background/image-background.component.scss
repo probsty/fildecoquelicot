@@ -1,59 +1,37 @@
-/* Root Variable for Navbar Height */
+/* Importation de la police depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 :root {
-  --navbar-height: 60px; /* Adjust based on your navbar height */
+  --navbar-height: 60px;
 }
 
-/* Hero Section Styles */
 .hero-section {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Prevents overflow from the image */
-  margin-top: var(--navbar-height); /* Push the section down to start below the navbar */
+  margin-top: var(--navbar-height);
 }
 
-/* Hero Image Container */
 .hero-image-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - var(--navbar-height)); /* Adjust height to fill the remaining viewport minus the navbar height */
-  overflow: hidden;
+  height: calc(100vh - var(--navbar-height));
 }
 
-/* Gradient Overlay */
-.hero-image-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, #1F1F1F 100%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Hero Image Styling */
 .hero-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container and is cropped */
-  display: block;
+  object-fit: cover;
 }
 
-/* Brand Title Styling */
+/* Style du texte */
 .brand-title {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 64px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #fff;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-  text-align: center;
+  top: 70%;
+  left: 5%;
+  transform: translateY(-50%);
+  font-family: 'Great Vibes', cursive;
+  font-size: 10vw;
+  color: #F5F5F5;
+  text-align: left;
   line-height: 1.2;
-  z-index: 2; /* Ensure it appears above the gradient overlay */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
 }
