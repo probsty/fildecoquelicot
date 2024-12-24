@@ -1,6 +1,11 @@
+:root {
+  --navbar-height: 60px;
+}
+
 /* Navbar Styles */
 .navbar {
   width: 100%;
+  height: var(--navbar-height);
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -19,7 +24,7 @@
 
 .logo img {
   height: 30px;
-  max-width: 100%;
+  transform: scale(2.8);
 }
 
 .nav-links {

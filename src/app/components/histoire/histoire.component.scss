@@ -1,30 +1,65 @@
 /* About Section */
 .about-section {
-  background-color: #F5F5F5; /* Light gray background */
-  padding: 80px 20px; /* Increased top and bottom padding for more height */
+  background: linear-gradient(to bottom, #F5F5F5, #F5F5F5); /* Dégradé subtil */
+  padding: 60px 20px; /* Réduit le padding pour un look plus compact */
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  text-align: center; /* Align text in the center */
-  min-height: 500px; /* Ensure a minimum height */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  min-height: 500px; /* Hauteur minimale */
 }
 
-.about-content {
-  max-width: 800px; /* Restrict the width for readability */
-  color: #6B747D; /* Softer gray text for a modern feel */
-  margin: 0 20px; /* Add spacing on the sides */
+.about-container {
+  max-width: 800px; /* Restreint la largeur pour une meilleure lisibilité */
+  text-align: center; /* Centré pour un look moderne */
 }
 
-.about-content h1 {
-  font-size: 3rem; /* Larger title for emphasis */
-  font-family: 'Inter', sans-serif; /* Modern sans-serif font for title */
-  color: #1F2937; /* Darker gray for the title */
-  margin-bottom: 30px; /* More space below the title */
+.about-title {
+  font-size: 2.5rem; /* Taille du titre moderne et équilibrée */
+  font-weight: bold; /* Poids gras pour plus d'impact */
+  color: #2c3e50; /* Bleu-gris moderne */
+  margin-bottom: 20px; /* Espacement sous le titre */
+  font-family: 'Poppins', sans-serif; /* Police élégante et contemporaine */
 }
 
-.about-content p {
-  font-size: 1.2rem; /* Slightly larger font size for better readability */
-  font-family: 'Inter', sans-serif; /* Modern sans-serif font for readability */
-  line-height: 1.8; /* Increased line spacing for clarity */
-  margin: 0; /* Remove extra margins */
+.about-title span {
+  color: #A71511; /* Accent rouge pour le nom */
+}
+
+.about-text {
+  font-size: 1.1rem; /* Taille de texte légèrement augmentée pour la lisibilité */
+  color: #7f8c8d; /* Gris doux pour un look moderne */
+  line-height: 1.8; /* Espacement des lignes équilibré */
+  font-family: 'Roboto', sans-serif; /* Police contemporaine pour le texte */
+  margin: 0 auto; /* Centrage automatique */
+  max-width: 90%; /* S'adapte sur les petits écrans */
+}
+
+/* Modern Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px; /* Réduit le padding pour les petits écrans */
+  }
+
+  .about-title {
+    font-size: 2rem; /* Taille réduite pour les petits écrans */
+  }
+
+  .about-text {
+    font-size: 1rem; /* Texte légèrement plus petit sur mobile */
+    line-height: 1.6; /* Ajuste l'espacement des lignes */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 10px; /* Padding réduit pour les très petits écrans */
+  }
+
+  .about-title {
+    font-size: 1.8rem; /* Titre encore plus petit pour les petits écrans */
+  }
+
+  .about-text {
+    font-size: 0.9rem; /* Texte plus compact sur les très petits écrans */
+  }
 }

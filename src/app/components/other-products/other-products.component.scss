@@ -164,3 +164,89 @@ section {
     object-fit: cover;
   }
 }
+
+/* Featured Product Text Section */
+.featured-product-text {
+  display: flex; /* Flexbox for layout */
+  flex-direction: row; /* Horizontal alignment by default */
+  justify-content: space-between; /* Space between title and description */
+  align-items: center; /* Center elements vertically */
+  gap: 40px; /* Space between title and description */
+  max-width: 1200px; /* Limit width for readability */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Title Styling */
+.featured-product-text h1 {
+  font-size: 2.5rem; /* Moderate size for title */
+  font-weight: bold;
+  color: #1f2937; /* Dark gray for a professional look */
+  flex: 1; /* Take up equal space */
+  line-height: 1.3;
+}
+
+.featured-product-text h1 span {
+  font-size: 2.5rem; /* Same size for consistency */
+  color: #A71511; /* Accent color for emphasis */
+  display: block;
+  margin-top: 10px; /* Slight space between lines */
+}
+
+/* Description Styling */
+.featured-product-text p {
+  font-size: 1rem; /* Moderate size for description */
+  color: #6b747d; /* Softer gray for readability */
+  line-height: 1.8;
+  flex: 1; /* Take up equal space */
+  margin: 0;
+  text-align: justify; /* Clean text alignment */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card__overlay h2, .card__overlay p {
+    display: none; /* Cache les titres et descriptions */
+  }
+
+  .featured-product-text h1, .featured-product-text p {
+    margin-bottom: 10%;
+  }
+
+  .featured-product-text {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .featured-product-text h1 {
+    font-size: 2rem; /* Reduce title size */
+  }
+
+  .featured-product-text h1 span {
+    font-size: 2.2rem; /* Adjust second line size */
+  }
+
+  .featured-product-text p {
+    font-size: 0.9rem; /* Slightly smaller paragraph text */
+    text-align: center; /* Center-align paragraph */
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-product-text {
+    padding: 10px; /* Reduce padding for smaller devices */
+    gap: 20px; /* Reduce gap between elements */
+  }
+
+  .featured-product-text h1 {
+    font-size: 1.8rem; /* Further reduce title size */
+  }
+
+  .featured-product-text h1 span {
+    font-size: 2rem; /* Adjust second line size for small screens */
+  }
+
+  .featured-product-text p {
+    font-size: 0.8rem; /* Smaller paragraph text */
+  }
+}
