@@ -1,0 +1,81 @@
+.formats-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+
+  .formats-intro {
+    font-size: 1rem;
+    color: #6b747d;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .formats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .format-card {
+    border-radius: 25px;
+    box-shadow: -2px 4px 15px rgba(0, 0, 0, 0.26);
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+
+    &__img {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.25rem;
+      color: #A71511;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #6b747d;
+      line-height: 1.4;
+      margin: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .formats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .format-card {
+    max-width: 300px;
+
+    margin: 0 auto;
+  }
+
+  .format-card__img {
+    height: 150px;
+  }
+}
+
