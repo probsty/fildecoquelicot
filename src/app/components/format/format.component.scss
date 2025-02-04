@@ -36,14 +36,16 @@
     padding-bottom: 1rem;
 
     &__img {
+      /* Rendre uniquement la zone image carrée */
+      aspect-ratio: 1 / 1;
       width: 100%;
-      height: 150px;  /* Réduisez la hauteur des images sur les écrans plus larges */
       overflow: hidden;
 
       img {
+        /* Afficher tout le logo */
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         display: block;
       }
     }
@@ -63,6 +65,7 @@
   }
 }
 
+/* Media query pour les écrans plus petits */
 @media (max-width: 768px) {
   .formats-grid {
     grid-template-columns: 1fr;
@@ -71,9 +74,5 @@
   .format-card {
     max-width: 300px;
     margin: 0 auto;
-  }
-
-  .format-card__img {
-    height: 120px; /* Réduire encore plus la taille de l'image sur les petits écrans */
   }
 }
