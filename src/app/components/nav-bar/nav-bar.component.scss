@@ -6,7 +6,7 @@
 .navbar {
   width: 100%;
   height: var(--navbar-height);
-  background-color: #C3C0B4;
+  background-color: #ffffff;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -22,11 +22,13 @@
   margin: 0 auto;
 }
 
+/* Logo */
 .logo img {
   height: 20px;
   transform: scale(2.8);
 }
 
+/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -49,7 +51,7 @@
   color: #A71511;
 }
 
-/* Hide nav-links on smaller screens */
+/* Bouton de menu, masqué par défaut sur grand écran */
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
@@ -59,24 +61,27 @@
   cursor: pointer;
 }
 
+/* Responsive : affichage sur petits écrans */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
-    flex-direction: column;
+    display: none;               /* On masque les liens par défaut */
+    flex-direction: column;      /* Empilage vertical */
     gap: 10px;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+    background-color: #ffffff;
   }
 
+  /* Classe 'show' qui s'ajoute pour afficher le menu au clic */
   .nav-links.show {
     display: flex;
   }
 
+  /* On rend le bouton visible sur petit écran */
   .menu-toggle {
     display: block;
   }
